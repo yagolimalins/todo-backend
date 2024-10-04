@@ -4,7 +4,7 @@ import router from "./src/routes/index.ts";
 
 const app = new Hono()
 
-await mongoose.connect(Deno.env.get("TODODB") || "")
+await mongoose.connect(Deno.env.get("TODODB"))
 
 router(app)
 

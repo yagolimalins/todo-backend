@@ -3,7 +3,7 @@
     "hono": "jsr:@hono/hono@^4.6.3"
   },
   "tasks": {
-    "start": "deno run --watch --allow-sys --allow-net --allow-read --allow-env main.ts"
+    "start": "deno run --watch --env --allow-sys --allow-net --allow-read --allow-env main.ts"
   },
   "compilerOptions": {
     "jsx": "precompile",
