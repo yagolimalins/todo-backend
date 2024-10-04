@@ -15,6 +15,13 @@ class TaskController {
         return c.json(tasks)
     }
 
+    static getTask = async (c: Context) => {
+        const id: string = await c.req.param("id")
+        const task = await getTaskById(id)
+        c.status(200)
+        return c.json(task)
+    }
+
     static deleteTask = async (c: Context) => {
         const id: string = await c.req.param("id")
         await deleteTask(id)

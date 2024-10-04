@@ -18,10 +18,10 @@ export const getTasks = () => {
     return TaskModel.find()
 }
 
-export const getTaskById = (id: String) => {
+export const getTaskById = (id: string) => {
     return TaskModel.findById(id)
 }
 
-export const deleteTask = (id: String) => {
+export const deleteTask = (id: string) => {
     return TaskModel.findByIdAndDelete(id)
 }
